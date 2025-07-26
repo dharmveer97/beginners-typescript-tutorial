@@ -2,11 +2,11 @@ import { expect, it } from "vitest";
 
 const tryCatchDemo = (state: "fail" | "succeed") => {
   try {
-    if (state === "succeed") {
+    if (state === "fail") {
       throw new Error("Failure!");
     }
   } catch (e) {
-    return (e as Error).message
+     return (e as Error).message
   }
 };
 
