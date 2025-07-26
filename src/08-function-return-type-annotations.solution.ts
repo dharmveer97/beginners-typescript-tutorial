@@ -34,7 +34,6 @@ const makeUser = (): User => {
 
 it("Should return a valid user", () => {
   const user = makeUser();
-
   expect(user.id).toBeTypeOf("number");
   expect(user.firstName).toBeTypeOf("string");
   expect(user.lastName).toBeTypeOf("string");
